@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<adcc version="1" type="BlackListConfiguration">
+  <blackList>
+    <node id="BGS1" name="BGS1">
+      <unit name="SendAddress">CTUE1YA</unit>
+      <unit name="RecvAddress">BJSXCXA,BJSIRXA</unit>
+      <unit name="SMI">M10,A80,FMD</unit>
+      <unit name="AN">B-****</unit>
+      <unit name="SpecLabel" index="0">TEST</unit>
+    </node>
+    <node id="test1" name="test1">
+      <unit name="SendAddress">test1</unit>
+      <unit name="RecvAddress">test1</unit>
+      <unit name="SMI"></unit>
+      <unit name="AN"></unit>
+      <unit name="SpecLabel" index=""></unit>
+    </node>
+    <node id="hh1" name="hh1">
+      <unit name="SendAddress">hh1</unit>
+      <unit name="RecvAddress">hh1</unit>
+      <unit name="SMI">hh1</unit>
+      <unit name="AN">hh1</unit>
+      <unit name="SpecLabel" index="hh2">hh1</unit>
+    </node>
+    <node id="BGS3" name="BGS3">
+      <unit name="SendAddress">CTUE1YA</unit>
+      <unit name="RecvAddress">BJSXCXA,BJSIRXA</unit>
+      <unit name="SMI">M10,A80,FMD</unit>
+      <unit name="AN">B-****</unit>
+      <unit name="SpecLabel" index="0">TEST</unit>
+    </node>
+    <node id="BGS2" name="BGS2">
+      <unit name="SendAddress">CTUE1YA</unit>
+      <unit name="RecvAddress">BJSXCXA,BJSIRXA</unit>
+      <unit name="SMI">M10,A80,FMD</unit>
+      <unit name="AN">B-****</unit>
+      <unit name="SpecLabel" index="0">TEST</unit>
+    </node>
+  </blackList>
+</adcc>

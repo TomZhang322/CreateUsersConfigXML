@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<adcc version="1" type="UserConfiguration">
+  <userList>
+    <node id="BGS1" name="BGS1" downlinkForward="false">
+      <unit name="SendQueue">Q.BGS1TOGW</unit>
+      <unit name="RecvQueue">Q.GWTOBGS1</unit>
+      <unit name="MsgType">RawMsg</unit>
+      <childNode id="Route3" name="Route3" type="Ground">
+        <unit name="Destination">Q.GWTOBGS2</unit>
+        <unit name="SpecLabel" index="0">Ground</unit>
+      </childNode>
+      <childNode id="Route1" name="Route1" type="Uplink">
+        <unit name="SendAddress"></unit>
+        <unit name="RecvAddress"></unit>
+        <unit name="Destination">Q.GWTOBGS2</unit>
+        <unit name="SMI"></unit>
+        <unit name="AN"></unit>
+        <unit name="SpecLabel" index="1">Uplink</unit>
+      </childNode>
+      <childNode id="Route2" name="Route2" type="Downlink">
+        <unit name="SendAddress"></unit>
+        <unit name="RecvAddress"></unit>
+        <unit name="SMI"></unit>
+        <unit name="FI"></unit>
+        <unit name="AN"></unit>
+        <unit name="RGS"></unit>
+        <unit name="SpecLabel" index="0">Downlink</unit>
+      </childNode>
+    </node>
+    <node id="BGS2" name="BGS2" downlinkForward="false">
+      <unit name="SendQueue">Q.BGS2TOGW</unit>
+      <unit name="RecvQueue">Q.GWTOBGS2</unit>
+      <unit name="MsgType">RawMsg</unit>
+      <childNode id="Route5" name="Route5" type="Downlink">
+        <unit name="SendAddress"></unit>
+        <unit name="RecvAddress"></unit>
+        <unit name="SMI"></unit>
+        <unit name="FI"></unit>
+        <unit name="AN"></unit>
+        <unit name="RGS"></unit>
+        <unit name="SpecLabel" index="0">Downlink</unit>
+      </childNode>
+      <childNode id="Route4" name="Route4" type="Uplink">
+        <unit name="SendAddress">Q.GWTOBGS1</unit>
+        <unit name="RecvAddress"></unit>
+        <unit name="Destination"></unit>
+        <unit name="SMI"></unit>
+        <unit name="AN"></unit>
+        <unit name="SpecLabel" index="0">Uplink</unit>
+      </childNode>
+      <childNode id="Route6" name="Route6" type="Ground">
+        <unit name="Destination">Q.GWTOBGS1</unit>
+        <unit name="SpecLabel" index="0">Ground</unit>
+      </childNode>
+    </node>
+  </userList>
+</adcc>
